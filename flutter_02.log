@@ -1,0 +1,109 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter test --machine --start-paused C:\Users\ASUS\Documents\Tugas P.Mobile\test\widget_test.dart
+
+## exception
+
+PathExistsException: PathExistsException: Creation failed, path = 'C:\Users\ASUS\Documents\Tugas P.Mobile\ios\Flutter' (OS Error: Cannot create a file when that file already exists.
+, errno = 183)
+
+```
+#0      _checkForErrorResponse (dart:io/common.dart:58:9)
+#1      _Directory.create.<anonymous closure> (dart:io/directory_impl.dart:130:9)
+#2      _rootRunUnary (dart:async/zone.dart:1538:47)
+#3      _CustomZone.runUnary (dart:async/zone.dart:1429:19)
+<asynchronous suspension>
+#4      _Directory.create.<anonymous closure>.<anonymous closure> (dart:io/directory_impl.dart:118:54)
+<asynchronous suspension>
+#5      _File.create.<anonymous closure> (dart:io/file_impl.dart:311:11)
+<asynchronous suspension>
+#6      _File.create.<anonymous closure> (dart:io/file_impl.dart:317:15)
+<asynchronous suspension>
+#7      ForwardingFile.create (package:file/src/forwarding/forwarding_file.dart:20:12)
+<asynchronous suspension>
+#8      ForwardingFile.create (package:file/src/forwarding/forwarding_file.dart:20:12)
+<asynchronous suspension>
+#9      IosProject._renderTemplateToFile (package:flutter_tools/src/xcode_project.dart:803:5)
+<asynchronous suspension>
+#10     IosProject._updateLLDBIfNeeded (package:flutter_tools/src/xcode_project.dart:786:7)
+<asynchronous suspension>
+#11     IosProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/xcode_project.dart:679:5)
+<asynchronous suspension>
+#12     FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:381:7)
+<asynchronous suspension>
+#13     FlutterCommand.regeneratePlatformSpecificToolingIfApplicable (package:flutter_tools/src/runner/flutter_command.dart:1936:5)
+<asynchronous suspension>
+#14     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1892:7)
+<asynchronous suspension>
+#15     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1581:27)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#17     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#18     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:503:9)
+<asynchronous suspension>
+#19     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#20     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:438:5)
+<asynchronous suspension>
+#21     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:98:11)
+<asynchronous suspension>
+#22     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#23     main (package:flutter_tools/executable.dart:101:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.35.3, on Microsoft Windows [Version 10.0.26100.4484], locale en-ID) [1,172ms]
+    • Flutter version 3.35.3 on channel stable at C:\Users\ASUS\Downloads\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision a402d9a437 (7 weeks ago), 2025-09-03 14:54:31 -0700
+    • Engine revision ddf47dd3ff
+    • Dart version 3.9.2
+    • DevTools version 2.48.0
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-lldb-debugging
+
+[✓] Windows Version (11 Home 64-bit, 24H2, 2009) [8.9s]
+
+[✗] Android toolchain - develop for Android devices [296ms]
+    ✗ Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/to/windows-android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, please use
+      `flutter config --android-sdk` to update to that location.
+
+
+[✓] Chrome - develop for the web [81ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop Windows apps [73ms]
+    ✗ Visual Studio not installed; this is necessary to develop Windows apps.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[!] Android Studio (not installed) [55ms]
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/to/windows-android-setup for detailed instructions).
+
+[✓] VS Code (version 1.105.1) [52ms]
+    • VS Code at C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.120.0
+
+[✓] Connected device (3 available) [1,235ms]
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.26100.4484]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 141.0.7390.108
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 140.0.3485.81
+
+[✓] Network resources [892ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 3 categories.
+```

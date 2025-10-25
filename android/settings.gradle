@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "flutter_project_muhammad_raihan"
