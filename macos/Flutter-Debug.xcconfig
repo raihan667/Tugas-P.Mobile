@@ -1,0 +1,7 @@
+// Flutter-Debug.xcconfig
+#include "Generated.xcconfig"
+FLUTTER_ROOT=/Users/shared/flutter
+FLUTTER_APPLICATION_PATH=../..
+FLUTTER_TARGET=lib/main.dart
+// Nama bundle untuk konfigurasi debug
+PRODUCT_BUNDLE_IDENTIFIER=com.contoh.aplikasi.debug
